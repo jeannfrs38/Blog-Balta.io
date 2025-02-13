@@ -55,3 +55,4 @@ C:\Projects\.Net\Blog\obj\Debug\net9.0\refint\Blog.dll
 C:\Projects\.Net\Blog\obj\Debug\net9.0\Blog.pdb
 C:\Projects\.Net\Blog\obj\Debug\net9.0\Blog.genruntimeconfig.cache
 C:\Projects\.Net\Blog\obj\Debug\net9.0\ref\Blog.dll
+C:\Projects\.Net\Blog\obj\Debug\net9.0\Blog.sourcelink.json
