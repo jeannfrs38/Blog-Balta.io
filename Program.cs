@@ -3,6 +3,7 @@ using System.Linq.Expressions;
 using Blog.Models;
 using Blog.Repositories;
 using Blog.Screens;
+using Blog.Screens.CatagoryScreens;
 using Blog.Screens.TagScreens;
 using Blog.Screens.UserScreens;
 using Dapper;
@@ -76,6 +77,7 @@ namespace Blog
                     MenuRoleScreen.Load();
                     break;
                 case 3:
+                    MenuCategoryScreen.Load();
                     break;
                 case 4:
                     MenuTagScreen.Load();
