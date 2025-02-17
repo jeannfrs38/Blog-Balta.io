@@ -27,5 +27,9 @@ public class Repository<T> where T : class
     public void Delete(T model)
         => _connection.Delete(model);
 
-
+    public void Delete(int id)
+    {
+        var model = Get(id);
+        _connection.Delete<T>(model);
+    }
 }

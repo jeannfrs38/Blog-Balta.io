@@ -13,9 +13,10 @@ namespace Blog
     public class Program
     {
         const string CONNECTION_STRING = @"Server=localhost,1433;Database=Blog;User ID=sa;Password=1q2w3e4r@#$;TrustServerCertificate=True";
+        const string CONNECTION_STRING2 = @"Server=localhost,1433;Database=Blog;User ID=sa;Password=Jfr@435#189; TrustServerCertificate=true";
         public static void Main(string[] args)
         {
-           Database.Connection = new SqlConnection(CONNECTION_STRING);
+           Database.Connection = new SqlConnection(CONNECTION_STRING2);
            Database.Connection.Open();
             //Desafio
             Load();

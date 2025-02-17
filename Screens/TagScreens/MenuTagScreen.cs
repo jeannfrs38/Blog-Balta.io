@@ -11,6 +11,8 @@ public class MenuTagScreen
         Console.WriteLine();
         Console.WriteLine("1 - Adicionar Tag");
         Console.WriteLine("2 - Listar Tag");
+        Console.WriteLine("3 - Atualizar Tag");
+        Console.WriteLine("4 - Deletar Tag");
         
         Console.WriteLine();
         var option = short.Parse(Console.ReadLine()!);
