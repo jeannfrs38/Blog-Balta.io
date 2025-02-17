@@ -2,6 +2,7 @@
 using System.Linq.Expressions;
 using Blog.Models;
 using Blog.Repositories;
+using Blog.Screens;
 using Blog.Screens.TagScreens;
 using Blog.Screens.UserScreens;
 using Dapper;
@@ -72,6 +73,7 @@ namespace Blog
                     MenuUserScreen.Load();
                     break;
                 case 2:
+                    MenuRoleScreen.Load();
                     break;
                 case 3:
                     break;
@@ -85,7 +87,7 @@ namespace Blog
                 case 7:
                     break;
                 case 8:
-                    Console.WriteLine("Obrigado ate a proxima!");
+                    Console.WriteLine("Obrigado ate a proxima!  ");
                     Environment.Exit(0);
                     break;
                 default: Load();
