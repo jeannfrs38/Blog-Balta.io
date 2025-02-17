@@ -47,15 +47,15 @@
           }
         }
       },
-      "Dapper/2.1.35": {
+      "Dapper/2.1.66": {
         "type": "package",
         "compile": {
-          "lib/net7.0/Dapper.dll": {
+          "lib/net8.0/Dapper.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Dapper.dll": {
+          "lib/net8.0/Dapper.dll": {
             "related": ".xml"
           }
         }
@@ -656,22 +656,20 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "Dapper/2.1.35": {
-      "sha512": "YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
+    "Dapper/2.1.66": {
+      "sha512": "/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
       "type": "package",
-      "path": "dapper/2.1.35",
+      "path": "dapper/2.1.66",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.1.35.nupkg.sha512",
+        "dapper.2.1.66.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
-        "lib/net5.0/Dapper.dll",
-        "lib/net5.0/Dapper.xml",
-        "lib/net7.0/Dapper.dll",
-        "lib/net7.0/Dapper.xml",
+        "lib/net8.0/Dapper.dll",
+        "lib/net8.0/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml",
         "readme.md"
@@ -1750,31 +1748,37 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Dapper >= 2.1.35",
+      "Dapper >= 2.1.66",
       "Dapper.Contrib >= 2.0.78",
       "Microsoft.Data.SqlClient >= 5.2.2"
     ]
   },
   "packageFolders": {
-    "/home/jeanfrs/.nuget/packages/": {}
+    "C:\\Users\\JeanFRS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jeanfrs/Downloads/bkp/Jean/.Net/Blog.Balta/Blog-Balta.io/Blog.csproj",
+      "projectUniqueName": "C:\\Projects\\.Net\\Blog\\Blog.csproj",
       "projectName": "Blog",
-      "projectPath": "/home/jeanfrs/Downloads/bkp/Jean/.Net/Blog.Balta/Blog-Balta.io/Blog.csproj",
-      "packagesPath": "/home/jeanfrs/.nuget/packages/",
-      "outputPath": "/home/jeanfrs/Downloads/bkp/Jean/.Net/Blog.Balta/Blog-Balta.io/obj/",
+      "projectPath": "C:\\Projects\\.Net\\Blog\\Blog.csproj",
+      "packagesPath": "C:\\Users\\JeanFRS\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\.Net\\Blog\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/jeanfrs/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\JeanFRS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1792,7 +1796,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -1800,7 +1805,7 @@
         "dependencies": {
           "Dapper": {
             "target": "Package",
-            "version": "[2.1.35, )"
+            "version": "[2.1.66, )"
           },
           "Dapper.Contrib": {
             "target": "Package",
@@ -1827,11 +1832,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.103/PortableRuntimeIdentifierGraph.json"
->>>>>>> 766d3d1339994658ad0bea7e5fa33243ab7a3746
       }
     }
   }

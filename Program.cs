@@ -3,6 +3,7 @@ using System.Linq.Expressions;
 using Blog.Models;
 using Blog.Repositories;
 using Blog.Screens.TagScreens;
+using Blog.Screens.UserScreens;
 using Dapper;
 using Dapper.Contrib.Extensions;
 using Microsoft.Data.SqlClient;
@@ -16,7 +17,7 @@ namespace Blog
         const string CONNECTION_STRING2 = @"Server=localhost,1433;Database=Blog;User ID=sa;Password=Jfr@435#189; TrustServerCertificate=true";
         public static void Main(string[] args)
         {
-           Database.Connection = new SqlConnection(CONNECTION_STRING2);
+           Database.Connection = new SqlConnection(CONNECTION_STRING);
            Database.Connection.Open();
             //Desafio
             Load();
@@ -61,12 +62,14 @@ namespace Blog
             Console.WriteLine("5 - Vincular perfil/usuário");
             Console.WriteLine("6 - Vincular post/tag");
             Console.WriteLine("7 - Relatorios");
+            Console.WriteLine("8 - Sair");
             Console.WriteLine();
             Console.WriteLine();
             var option = short.Parse(Console.ReadLine()!);
             switch (option)
             {
                 case 1:
+                    MenuUserScreen.Load();
                     break;
                 case 2:
                     break;
@@ -80,6 +83,10 @@ namespace Blog
                 case 6:
                     break;
                 case 7:
+                    break;
+                case 8:
+                    Console.WriteLine("Obrigado ate a proxima!");
+                    Environment.Exit(0);
                     break;
                 default: Load();
                     break;

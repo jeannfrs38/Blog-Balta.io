@@ -1,26 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/jeanfrs/Downloads/bkp/Jean/.Net/Blog.Balta/Blog-Balta.io/Blog.csproj": {}
+    "C:\\Projects\\.Net\\Blog\\Blog.csproj": {}
   },
   "projects": {
-    "/home/jeanfrs/Downloads/bkp/Jean/.Net/Blog.Balta/Blog-Balta.io/Blog.csproj": {
+    "C:\\Projects\\.Net\\Blog\\Blog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jeanfrs/Downloads/bkp/Jean/.Net/Blog.Balta/Blog-Balta.io/Blog.csproj",
+        "projectUniqueName": "C:\\Projects\\.Net\\Blog\\Blog.csproj",
         "projectName": "Blog",
-        "projectPath": "/home/jeanfrs/Downloads/bkp/Jean/.Net/Blog.Balta/Blog-Balta.io/Blog.csproj",
-        "packagesPath": "/home/jeanfrs/.nuget/packages/",
-        "outputPath": "/home/jeanfrs/Downloads/bkp/Jean/.Net/Blog.Balta/Blog-Balta.io/obj/",
+        "projectPath": "C:\\Projects\\.Net\\Blog\\Blog.csproj",
+        "packagesPath": "C:\\Users\\JeanFRS\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\.Net\\Blog\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/jeanfrs/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\JeanFRS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,7 +52,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.1.35, )"
+              "version": "[2.1.66, )"
             },
             "Dapper.Contrib": {
               "target": "Package",
@@ -74,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
