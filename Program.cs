@@ -4,6 +4,8 @@ using Blog.Models;
 using Blog.Repositories;
 using Blog.Screens;
 using Blog.Screens.CatagoryScreens;
+using Blog.Screens.LinkScreens;
+using Blog.Screens.PostScreens;
 using Blog.Screens.TagScreens;
 using Blog.Screens.UserScreens;
 using Dapper;
@@ -26,7 +28,7 @@ namespace Blog
             Console.ReadKey();
             //Read All
             //ReadUsers(connection);
-            //ReadUsersWithRoles(connection);
+            //ReadUsersWithRoles(Database.Connection);
             //ReadRoles(connection);
             //ReadTags(connection);
             //ReadOne
@@ -61,10 +63,11 @@ namespace Blog
             Console.WriteLine("2 - Gestao de Perfil");
             Console.WriteLine("3 - Gestao de Categoria");
             Console.WriteLine("4 - Gestao de tag");
-            Console.WriteLine("5 - Vincular perfil/usuário");
-            Console.WriteLine("6 - Vincular post/tag");
-            Console.WriteLine("7 - Relatorios");
-            Console.WriteLine("8 - Sair");
+            Console.WriteLine("5 - Gestao de Post");
+            Console.WriteLine("6 - Vincular perfil/usuário");
+            Console.WriteLine("7 - Vincular post/tag");
+            Console.WriteLine("8 - Relatorios");
+            Console.WriteLine("9 - Sair");
             Console.WriteLine();
             Console.WriteLine();
             var option = short.Parse(Console.ReadLine()!);
@@ -83,12 +86,17 @@ namespace Blog
                     MenuTagScreen.Load();
                     break;
                 case 5:
+                    MenuPostScreen.Load();
                     break;
                 case 6:
+                    UserRoleScreen.Load();
                     break;
                 case 7:
+                    PostTagScreen.Load();
                     break;
                 case 8:
+                    break;
+                case 9:
                     Console.WriteLine("Obrigado ate a proxima!  ");
                     Environment.Exit(0);
                     break;
@@ -115,10 +123,10 @@ namespace Blog
         //
         //     foreach (var user in users)
         //     {
-        //         Console.WriteLine($"{user.Email}");
+        //         //Console.WriteLine($"{user.Email}");
         //         foreach (var roles in user.Roles)
         //         {
-        //             Console.WriteLine($"- {roles.Slug}");
+        //             Console.WriteLine($"{user.Email} , {roles.Name} , {roles.Slug}");
         //         }
         //     }
         // }

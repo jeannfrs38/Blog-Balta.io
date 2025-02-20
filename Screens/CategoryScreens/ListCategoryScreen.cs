@@ -10,9 +10,21 @@ public class ListCategoryScreen
         Console.Clear();
         Console.WriteLine("Listar Categorias");
         Console.WriteLine("-----------------");
-        Console.WriteLine();
+        Console.WriteLine("1 - Listar Categorias");
+        Console.WriteLine("2 - Listar Categorias com Quantidade de Posts");
+        var option = int.Parse(Console.ReadLine());
+
+        switch (option)
+        {
+            case 1:
+                List();
+                break;
+            case 2:
+                ListCategoryWithPosts();
+                break;
+        }
+
         
-        List();
         Console.ReadKey();
         MenuCategoryScreen.Load();
     }
@@ -26,5 +38,17 @@ public class ListCategoryScreen
         {
             Console.WriteLine($"{category.Id} - {category.Title}, {category.Slug}");
         }
+    }
+
+    public static void ListCategoryWithPosts()
+    {
+        var categoryRepository = new CategoryRepository(Database.Connection);
+        var categories = categoryRepository.GetCategoryWhitPost();
+
+        foreach (var category in categories)
+        {
+            Console.WriteLine($"{category.Id} - {category.Title} = Quantidade de Posts = {category.Posts.Count}");
+        }
+
     }
 }
