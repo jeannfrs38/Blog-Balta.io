@@ -17,16 +17,23 @@ public class ListUserScreen
 
     public static void List()
     {
-        var userRepository = new UserRepository(Database.Connection);
-        var users = userRepository.GetWithRoles();
+        var repository = new Repository<User>(Database.Connection);
+        var users = repository.Get();
 
-        foreach (var user in users )
+        foreach (var user in users)
         {
-            foreach (var role  in user.Roles)
-            {
-                Console.WriteLine($"{user.Id} - {user.Name}, {user.Email}, HASH, {user.Bio}, {user.Image}, {user.Slug}, {role.Name}, {role.Slug}");
-            }
-            
+            Console.WriteLine($"{user.Name} - {user.Email}");
         }
+        // var userRepository = new UserRepository(Database.Connection);
+        // var users = userRepository.GetWithRoles();
+        //
+        // foreach (var user in users )
+        // {
+        //     foreach (var role  in user.Roles)
+        //     {
+        //         Console.WriteLine($"{user.Id} - {user.Name}, {user.Email}, HASH, {user.Bio}, {user.Image}, {user.Slug}, {role.Name}, {role.Slug}");
+        //     }
+        //     
+        // }
     }
 }

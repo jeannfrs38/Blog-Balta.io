@@ -8,7 +8,7 @@ public class ListPostScreen
     public static void Load()
     {
         Console.Clear();
-        Console.WriteLine("Listar posts cadastrados");
+        Console.WriteLine("Listar Post");
         Console.WriteLine("------------------------");
         Console.WriteLine();
         List();
@@ -23,7 +23,8 @@ public class ListPostScreen
 
         foreach (var post in posts)
         {
-            Console.WriteLine($"{post.Id} - {post.AuthorId} - {post.CategoryId} - {post.Title}, {post.Summary}, {post.Body}, {post.CreateDate}, {post.LastUpdateDate}");
+            Console.WriteLine($" Id: {post.Id} - Author: {post.AuthorId} - Category: {post.CategoryId} - {post.Title}, {post.Summary}, {post.Body}, {post.CreateDate}, {post.LastUpdateDate}");
         }
     }
+
 }

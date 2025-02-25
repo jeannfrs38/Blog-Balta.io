@@ -13,6 +13,7 @@ public class MenuTagScreen
         Console.WriteLine("2 - Listar Tag");
         Console.WriteLine("3 - Atualizar Tag");
         Console.WriteLine("4 - Deletar Tag");
+        Console.WriteLine("5 - Sair");
         
         Console.WriteLine();
         var option = short.Parse(Console.ReadLine()!);
@@ -30,6 +31,9 @@ public class MenuTagScreen
                 break;
             case 4:
                 DeleteTagScreen.Load();
+                break;
+            case 5:
+                Program.Load();
                 break;
             default:
                 Load();

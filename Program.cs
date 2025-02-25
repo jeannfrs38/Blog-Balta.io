@@ -6,6 +6,7 @@ using Blog.Screens;
 using Blog.Screens.CatagoryScreens;
 using Blog.Screens.LinkScreens;
 using Blog.Screens.PostScreens;
+using Blog.Screens.RelatorioScreens;
 using Blog.Screens.TagScreens;
 using Blog.Screens.UserScreens;
 using Dapper;
@@ -70,6 +71,7 @@ namespace Blog
             Console.WriteLine("9 - Sair");
             Console.WriteLine();
             Console.WriteLine();
+            Console.Write("Escolha umas opcao: ");
             var option = short.Parse(Console.ReadLine()!);
             switch (option)
             {
@@ -95,6 +97,7 @@ namespace Blog
                     PostTagScreen.Load();
                     break;
                 case 8:
+                    MenuRelatorioScreen.Load();
                     break;
                 case 9:
                     Console.WriteLine("Obrigado ate a proxima!  ");
